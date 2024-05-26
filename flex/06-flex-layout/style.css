@@ -2,12 +2,11 @@
 
 body {
   height: 100vh;
-  margin-left: 0;
+  margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 }
 
 img {
@@ -19,13 +18,16 @@ button {
   border: none;
   border-radius: 8px;
   background: #eee;
-  padding: 0.5em 1em;
+  padding: 8px 16px;
 }
 
 .content {
+  flex: 1;
   display: flex;
+  justify-content: center;
   flex-direction: column;
   align-items: center;
+  gap: 16px;
 }
 
 input {
@@ -37,38 +39,24 @@ input {
 
 a {
   text-decoration: none;
-  color: inherit;
+  color: #555;
 }
 
 ul {
   list-style-type: none;
-  gap: 1em;
-}
-
-.header {
+  gap: 16px;
+  margin: 0;
+  padding: 0;
   display: flex;
-  justify-content: space-between;
-  margin-left: -1.5em;
-  padding-right: 1em;
 }
 
+.header,
 .footer {
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
+  padding: 16px;
+}
+
+.footer {
   background-color: #eee;
-  margin-left: -1.5em;
-  padding-right: 1em;
-}
-
-.left-links {
-  display: flex;
-}
-
-.right-links {
-  display: flex;
-}
-
-.buttons {
-  padding: 0.8em;
 }
