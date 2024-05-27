@@ -4,26 +4,75 @@ body {
   min-height: 100vh;
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
 .header {
   height: 72px;
   background: darkmagenta;
   color: white;
+  font-size: 32px;
+  font-weight: bold;
+  padding-left: 16px;
+  font-family: Arial;
 }
+
+.header div {
+  margin-top: 0.5em;
+}
+
 
 .footer {
   height: 72px;
   background: #eee;
   color: darkmagenta;
+  text-align: center;
+}
+
+.footer div {
+  margin-top: 1.8em;
 }
 
 .sidebar {
   width: 300px;
   background: royalblue;
   box-sizing: border-box;
+  flex-shrink: 0;
+}
+
+a {
+  text-decoration: none;
+  font-size: 24px;
+  color: inherit;
+  color: #eee;
+  font-family: Arial;
+}
+
+ul {
+  list-style: none;
+  padding: 16px;
+  margin: 0;
 }
 
 .card {
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
+  flex: auto;
+  max-width: 300px;
+  padding: 14px;
+}
+
+.content {
+  display: flex;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 48px;
+  gap: 2em;
+  height: 680px;
 }
